@@ -1,0 +1,67 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .header .logo h1 {
+    font-size: 1.8rem;
+  }
+  .header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .header .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .header .search-bar {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .header .search-bar input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  .footer .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  .footer .footer-info p {
+    margin: 0.5rem 0;
+  }
+  .footer .footer-links a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  .footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
