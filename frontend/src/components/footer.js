@@ -1,13 +1,14 @@
 import React from 'react';
-import './styles.css';
+import './style.css';
 
-const Footer = () => {
+
+function Footer() {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-info">
           <p>© 2024 S/A Armazém Pet. Todos os direitos reservados.</p>
-          <p>Endereço: Rua dos Pets, 123 - PetCity</p>
+          <p>Endereço: Avenida Constantino Pinto, 265 - Muriaé-MG</p>
         </div>
         <div className="footer-links">
           <a href="#politica">Política de Privacidade</a>
@@ -17,6 +18,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;

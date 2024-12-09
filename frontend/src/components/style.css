@@ -1,0 +1,116 @@
+/* Definindo as cores */
+:root {
+  --laranja: #f54619; /* Laranja como cor principal */
+  --azul: #00007e; /* Azul como cor complementar */
+  --branco: #ffffff; /* Branco */
+  --preto: #000000; /* Preto */
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--branco); /* Fundo branco */
+  color: var(--preto); /* Texto preto */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: var(--laranja); /* Laranja para o fundo */
+  color: var(--branco); /* Texto branco */
+  padding: 10px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header .logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav ul li {
+  margin: 0 15px;
+}
+
+.header .nav ul li a {
+  text-decoration: none;
+  color: var(--branco); /* Branco no texto */
+  font-size: 16px;
+}
+
+.header .nav ul li a:hover {
+  color: var(--azul); /* Azul no hover */
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid var(--preto); /* Bordas pretas */
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: var(--azul); /* Azul para o botão */
+  color: var(--branco);
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #003f6b; /* Tom mais escuro de azul */
+}
+
+/* Footer */
+.footer {
+  background-color: var(--azul); /* Azul para o fundo */
+  color: var(--branco); /* Texto branco */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .footer-info p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: var(--branco); /* Branco nos links do footer */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: var(--laranja); /* Laranja no hover */
+}
+
+/* Links e textos em preto para maior contraste */
+a {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--laranja); /* Laranja no hover */
+}
+
