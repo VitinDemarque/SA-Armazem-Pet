@@ -1,29 +1,36 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { Link } from "react-router-dom"; // Importando o Link do React Router
+import "../styles.css";
 
-
-function Header() {
+const Header = () => {
   return (
     <header className="header">
       <div className="container">
+        {/* Substitua o texto pela logo da loja */}
         <div className="logo">
-          <h1>S/A Armazém Pet</h1>
+          <Link to="/"> {/* O Link redireciona para a página Home */}
+            <img 
+              src={require('../assets/logoHeader.png')} 
+              alt="S/A Armazém Pet" 
+              className="logo-img" 
+            />
+          </Link>
         </div>
         <nav className="nav">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/produtos">Produtos</Link></li>
+            <li><Link to="/sobre">Sobre</Link></li>
+            <li><Link to="/contato">Contato</Link></li>
           </ul>
         </nav>
         <div className="search-bar">
-          <input type="text" placeholder="Buscar..." />
-          <button>Pesquisar</button>
+          <input type="text" placeholder="Buscar produtos..." />
+          <button>Buscar</button>
         </div>
       </div>
     </header>
   );
-}
+};
 
 export default Header;

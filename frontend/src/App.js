@@ -1,19 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
+import RoutesConfig from './routes';
+import "./styles.css";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      {/* Aqui você pode colocar o conteúdo principal */}
-      <main>
-        <h2>Bem-vindo ao S/A Armazém Pet!</h2>
-        <p>Encontre os melhores produtos para o seu pet.</p>
-      </main>
+      <RoutesConfig/>
       <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;

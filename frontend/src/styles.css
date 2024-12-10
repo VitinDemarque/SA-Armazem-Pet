@@ -31,11 +31,17 @@ body {
   padding: 0 20px;
 }
 
-.header .logo h1 {
-  font-size: 24px;
-  font-weight: bold;
+.header .logo {
+  display: flex;
+  align-items: center;
 }
 
+.header .logo img {
+  max-width: 150px; /* Ajuste o tamanho da logo */
+  height: auto; /* Manter a proporção da imagem */
+}
+
+/* Navegação */
 .header .nav ul {
   list-style: none;
   display: flex;
@@ -49,7 +55,7 @@ body {
 
 .header .nav ul li a {
   text-decoration: none;
-  color: var(--branco); /* Branco no texto */
+  color: var(--branco);
   font-size: 16px;
 }
 
@@ -67,7 +73,7 @@ body {
   padding: 5px;
   font-size: 16px;
   margin-right: 10px;
-  border: 1px solid var(--preto); /* Bordas pretas */
+  border: 1px solid var(--preto);
 }
 
 .search-bar button {
@@ -113,4 +119,89 @@ a {
 a:hover {
   color: var(--laranja); /* Laranja no hover */
 }
+/* Banner */
+.banner {
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 50px 20px;
+  text-align: center;
+}
 
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+/* Categorias de Produtos */
+.product-categories {
+  background-color: var(--branco);
+  padding: 40px 20px;
+}
+
+.product-categories .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.product-categories .category {
+  text-align: center;
+  background-color: var(--laranja);
+  padding: 30px;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.product-categories .category h2 {
+  font-size: 24px;
+  color: var(--branco);
+}
+
+/* Produtos em Destaque */
+.featured-products {
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 40px 20px;
+}
+
+.featured-products .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: var(--branco);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background-color: var(--laranja);
+  color: var(--branco);
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background-color: var(--azul);
+}
