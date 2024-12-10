@@ -205,3 +205,39 @@ a:hover {
 .product-card button:hover {
   background-color: var(--azul);
 }
+
+/* Estilos para o carrossel */
+.home {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.produto, .categoria {
+  text-align: center;
+}
+
+.produto-img, .categoria-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Ajustes para a navegação do carrossel */
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-prev, .slick-next {
+  color: #000;
+}
+
+/* Estilo dos itens de carrossel */
+.produto h3, .categoria h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.produto p {
+  font-size: 16px;
+  color: #666;
+}

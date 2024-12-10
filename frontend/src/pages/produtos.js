@@ -3,7 +3,7 @@ import React from "react";
 const produtos = () => {
   return (
     <div>
-      <h1>Bem-vindo ao S/A Armazém Pet</h1>
+      <h1>PRODUTOS DA LOJA</h1>
       <p>Encontre tudos os produtos da loja aqui!</p>
     </div>
   );
