@@ -63,6 +63,17 @@ body {
   color: var(--azul); /* Azul no hover */
 }
 
+.wpploja {
+  position: relative;
+  display: inline-block;
+}
+
+.wpploja1 {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
 /* Barra de pesquisa */
 .search-bar {
   display: flex;
@@ -135,109 +146,44 @@ a:hover {
 .banner p {
   font-size: 18px;
 }
-
-/* Categorias de Produtos */
-.product-categories {
-  background-color: var(--branco);
-  padding: 40px 20px;
+.cart-icon {
+  position: relative;
+  display: inline-block;
 }
 
-.product-categories .container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.product-categories .category {
-  text-align: center;
-  background-color: var(--laranja);
-  padding: 30px;
-  border-radius: 8px;
-  width: 30%;
-}
-
-.product-categories .category h2 {
-  font-size: 24px;
-  color: var(--branco);
-}
-
-/* Produtos em Destaque */
-.featured-products {
-  background-color: var(--azul);
-  color: var(--branco);
-  padding: 40px 20px;
-}
-
-.featured-products .container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.product-card {
-  background-color: var(--branco);
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  width: 30%;
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.product-card p {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.product-card button {
-  padding: 10px 20px;
-  background-color: var(--laranja);
-  color: var(--branco);
-  border: none;
+.cart-img {
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
-.product-card button:hover {
-  background-color: var(--azul);
+.whatsapp-button {
+  display: inline-block;
+  margin-left: 15px;
 }
 
-/* Estilos para o carrossel */
-.home {
-  margin-top: 20px;
-  padding: 20px;
+.whatsapp-img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.produto, .categoria {
-  text-align: center;
+.whatsapp-img:hover {
+  transform: scale(1.1);
 }
 
-.produto-img, .categoria-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.cart-icon {
+  margin-left: 15px;
 }
 
-/* Ajustes para a navegação do carrossel */
-.slick-slide {
-  padding: 10px;
+.cart-img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.slick-prev, .slick-next {
-  color: #000;
-}
-
-/* Estilo dos itens de carrossel */
-.produto h3, .categoria h3 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.produto p {
-  font-size: 16px;
-  color: #666;
+.cart-img:hover {
+  transform: scale(1.1);
 }

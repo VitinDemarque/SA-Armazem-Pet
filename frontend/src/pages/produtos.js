@@ -1,6 +1,7 @@
 import React from "react";
 
 const produtos = () => {
+  
   return (
     <div>
       <h1>PRODUTOS DA LOJA</h1>

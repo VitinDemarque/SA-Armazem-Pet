@@ -12,6 +12,7 @@ import Produtos from '../pages/produtos';
 import Contato from '../pages/contato';
 import Sobre from '../pages/sobre';
 import NotFound from "../pages/notfound";
+import Carrinho from "../pages/carrinho";
 
 
 const RoutesConfig = () => {
@@ -30,6 +31,7 @@ const RoutesConfig = () => {
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/contato" element={<Contato />} />
       <Route path="/produtos" element={<Produtos />} />
+      <Route path="/carrinho" element={<Carrinho />} />
     </Routes>
     </>
   );
